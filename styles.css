@@ -1,0 +1,13 @@
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    max-height: 600px;
+}
+.square {
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.colored {
+    background-color: black;
+}
