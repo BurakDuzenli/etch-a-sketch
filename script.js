@@ -22,6 +22,9 @@ button.addEventListener('click', () => {
         grid(ans);
     }
 })
+resetButton.addEventListener('click', () => {
+    resetGrid();
+});
 function grid(ans) {
     for (let i = 0; i < ans; i++) {
         for(let j =0; j < ans; j++) {
@@ -36,5 +39,10 @@ function grid(ans) {
             })
         }
       }
+}
+function resetGrid() {
+    while (container.firstChild) {
+        container.removeChild(container.firstChild);
+    }
 }
 
